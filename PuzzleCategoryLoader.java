@@ -1,11 +1,25 @@
+//David Hill    This file loads the first line from a csv file which contains the puzzles categories.
 import java.io.*;
 import java.util.*;
 
 public class PuzzleCategoryLoader {
-    private Map<String, List<String>> categories;
+    private List<String> categories;
     public PuzzleCategoryLoader(String filePath) {
-        categories = new HashMap<>();
+        categories = new ArrayList<>();
         loadCategories(filePath);
+    }
+    private void loadCategories(String filePath) {
+        try (BufferedReader first_Line = new BufferedReader(new FileReader(filePath))) {
+            String line_first = first_Line.readLine();  //This will read only the first line of the csv
+            if (line_first != null) {
+                categories = Arrays.asList(line_first.split(","));
+            }
+        }   catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public List<String> getCategories() {
+        return categories;
     }
 
 
