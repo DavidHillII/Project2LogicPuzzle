@@ -5,8 +5,8 @@ import java.util.*;
 public class PuzzleCategoryLoader {
     private List<String> categories;
     public PuzzleCategoryLoader(String filePath) {
-        categories = new ArrayList<>();
-        loadCategories(filePath);
+        categories = new ArrayList<>(); //Creates an arrayList to hold the parsed categories
+        loadCategories(filePath); //Fills up the arrayList with the categories
     }
     private void loadCategories(String filePath) {
         try (BufferedReader first_Line = new BufferedReader(new FileReader(filePath))) {
