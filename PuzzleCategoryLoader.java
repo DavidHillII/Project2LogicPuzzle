@@ -21,6 +21,9 @@ public class PuzzleCategoryLoader {
     public List<String> getCategories() {
         return categories;
     }
-
+    //added by Valerie 2/20 this gets the items for each category
+    public String getItemsForCategory(String category) {
+        return categories.set(0, category)  ;
+    }
 
 }
