@@ -1,3 +1,4 @@
+//David
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -8,6 +9,6 @@ public class PuzzleGame extends Application {
         new PuzzleGridController(primaryStage, filePath);
     }
     public static void main(String[] args) {
-        launch(args);
+        launch(args); //starts the window
     }
 }
