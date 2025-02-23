@@ -9,12 +9,12 @@ public class PuzzleCategoryLoader {
         loadCategories(filePath); //Fills up the arrayList with the categories
     }
     private void loadCategories(String filePath) {
-        try (BufferedReader first_Line = new BufferedReader(new FileReader(filePath))) {
-            String line_first = first_Line.readLine();  //This will read only the first line of the csv
-            if (line_first != null) {
-                categories = Arrays.asList(line_first.split(","));
+        try (Scanner scanner = new Scanner(new File(filePath))) {
+            if (scanner.hasNextLine()) {
+                String line = scanner.nextLine(); // Reads only the first line of the CSV
+                categories = Arrays.asList(line.split(","));
             }
-        }   catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
