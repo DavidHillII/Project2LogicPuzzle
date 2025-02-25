@@ -59,4 +59,20 @@ public class PuzzleCategoryLoader {
     public List<String> getCategory4() {
         return categories_4;
     }
+        // Returns the list of items for the given category
+    public List<String> getItemsForCategory(String category) {
+        int index = headers.indexOf(category);
+        switch (index) {
+            case 0:
+                return categories_1;
+            case 1:
+                return categories_2;
+            case 2:
+                return categories_3;
+            case 3:
+                return categories_4;
+            default:
+                return new ArrayList<>();
+        }
+    }
 }
