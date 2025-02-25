@@ -17,7 +17,7 @@
    <children>
       <ImageView blendMode="MULTIPLY" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" translateX="450.0" translateY="50.0">
          <image>
-            <Image url="@../../../Downloads/Untitled%20design.png" />
+            <Image url="@dc5985011ad239541d20e54ddefda5f8.jpg" />
          </image>
       </ImageView>
       <Label text="Logic Puzzle Game" translateX="250.0" translateY="-30.0">
