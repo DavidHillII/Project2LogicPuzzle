@@ -21,11 +21,11 @@ public class PuzzleCategoryLoader {
     private void loadCategories(String filePath) {
         try (Scanner scanner = new Scanner(new File(filePath))) {
             if (scanner.hasNextLine()) {
-                // Load first row as headers
+                // Load the first row as headers
                 headers = Arrays.asList(scanner.nextLine().split(","));
             }
 
-            // Load each subsequent row into separate category lists
+            // Load each of the next rows into separate ArrayLists
             while (scanner.hasNextLine()) {
                 String[] items = scanner.nextLine().split(",");
                 if (items.length >= 4) { // Ensure we have enough columns
