@@ -1,29 +1,62 @@
-//David Hill    This file loads the first line from a csv file which contains the puzzles categories.
+// David Hill - Loads the first line as headers and the following rows into separate lists.
 import java.io.*;
 import java.util.*;
 
 public class PuzzleCategoryLoader {
-    private List<String> categories;
+    private List<String> headers;
+    private List<String> categories_1;
+    private List<String> categories_2;
+    private List<String> categories_3;
+    private List<String> categories_4;
+
     public PuzzleCategoryLoader(String filePath) {
-        categories = new ArrayList<>(); //Creates an arrayList to hold the parsed categories
-        loadCategories(filePath); //Fills up the arrayList with the categories
+        headers = new ArrayList<>();
+        categories_1 = new ArrayList<>();
+        categories_2 = new ArrayList<>();
+        categories_3 = new ArrayList<>();
+        categories_4 = new ArrayList<>();
+        loadCategories(filePath);
     }
+
     private void loadCategories(String filePath) {
         try (Scanner scanner = new Scanner(new File(filePath))) {
             if (scanner.hasNextLine()) {
-                String line = scanner.nextLine(); // Reads only the first line of the CSV
-                categories = Arrays.asList(line.split(","));
+                // Load first row as headers
+                headers = Arrays.asList(scanner.nextLine().split(","));
+            }
+
+            // Load each subsequent row into separate category lists
+            while (scanner.hasNextLine()) {
+                String[] items = scanner.nextLine().split(",");
+                if (items.length >= 4) { // Ensure we have enough columns
+                    categories_1.add(items[0]);
+                    categories_2.add(items[1]);
+                    categories_3.add(items[2]);
+                    categories_4.add(items[3]);
+                }
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-    public List<String> getCategories() {
-        return categories;
-    }
-    //added by Valerie 2/20 this gets the items for each category
-    public String getItemsForCategory(String category) {
-        return categories.set(0, category)  ;
+
+    public List<String> getHeaders() {
+        return headers;
     }
 
+    public List<String> getCategory1() {
+        return categories_1;
+    }
+
+    public List<String> getCategory2() {
+        return categories_2;
+    }
+
+    public List<String> getCategory3() {
+        return categories_3;
+    }
+
+    public List<String> getCategory4() {
+        return categories_4;
+    }
 }
