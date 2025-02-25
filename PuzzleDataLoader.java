@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class PuzzleDataLoader {
     private ArrayList<String> correctPairs = new ArrayList<>();
-    
+
 
     public void loadCSV(String fileName) {
         try (Scanner scanner = new Scanner(new File(fileName))) {
@@ -23,20 +23,20 @@ public class PuzzleDataLoader {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        
-    
+
+
     }
     public boolean isCorrectPair(String item1, String item2) {
-        
+
         return correctPairs.contains(item1 + "-" + item2) || correctPairs.contains(item2 + "-" + item1);
     }
-       public List<String> getCorrectPairs() {
+    public List<String> getCorrectPairs() {
         return correctPairs;
     }
     // print out the correct pairs in the console
     public PuzzleDataLoader(String fileName) {
-        
+
         loadCSV(fileName);
     }
-      
-    }
+
+}

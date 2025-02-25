@@ -32,10 +32,12 @@ public class PuzzleGame extends Application {
         }
         // tests CSVHints.txt
     }
+
     @Override
     public void start(Stage primaryStage) throws IOException {
-    Parent root = FXMLLoader.load(getClass().getResource("Puzzle_Game.fxml")); // Load FXML
-    Scene scene = new Scene(root);
-    primaryStage.setScene(scene);
-    primaryStage.show();
+        Parent root = FXMLLoader.load(getClass().getResource("Puzzle_Game.fxml")); // Load FXML
+        Scene scene = new Scene(root);
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
+}

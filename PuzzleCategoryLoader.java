@@ -59,7 +59,7 @@ public class PuzzleCategoryLoader {
     public List<String> getCategory4() {
         return categories_4;
     }
-        // Returns the list of items for the given category
+    // Returns the list of items for the given category
     public List<String> getItemsForCategory(String category) {
         int index = headers.indexOf(category);
         switch (index) {
