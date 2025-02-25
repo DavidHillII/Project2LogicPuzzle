@@ -3,9 +3,17 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 import java.util.*;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 public class PuzzleGridController {
-    @FXML private GridPane gridPane;
+    @FXML
+    private GridPane gridPane;
+    @FXML
+    private ResourceBundle resources;
+
+    @FXML
+    private URL location;
     protected PuzzleCategoryLoader categoryLoader;
     protected PuzzleDataLoader dataLoader;
     private List<Button> moveHistory = new ArrayList<>();
@@ -19,8 +27,10 @@ public class PuzzleGridController {
     }
 
     private void initialize() {
-        categoryLoader.loadCategories(PuzzleCategories.csv);
+        categoryLoader.loadCategories("CSVCategories.txt");
         dataLoader.loadCSV("PuzzleSolutions.csv");
+        // this is
+        // hint =loader.loadHints("CSVHints.txt");
         setupGrid();
     }
 
@@ -42,7 +52,7 @@ public class PuzzleGridController {
                 Button cellButton = new Button(" ");
                 final String rowItem = rowLabels.get(row);
                 final String colItem = colLabels.get(col);
-                buttonPairs.add(new String[]{rowItem, colItem});
+                buttonPairs.add(new String[] { rowItem, colItem });
                 buttons.add(cellButton);
                 cellButton.setOnAction(e -> toggleCell(cellButton, rowItem, colItem));
                 gridPane.add(cellButton, col + 1, row + 1);
