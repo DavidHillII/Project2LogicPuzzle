@@ -3,3 +3,9 @@ Al Acosta,Sid Scott,Leonard Levy,Hal Hickman
 Argentina,France,Norway,Sweden
 $25 billion,$26 billion,$27 billion,$28 billion
 Argentina,France,Norway,Sweden
+//added by Val let me know which format prefered
+People,Countries,Wealth,Countries
+Al Costa,Argentina,$25 million,Argentina
+Hal Hickman,France,$26 million,France
+Leonard Levy,Norway,$27 million,Norway
+Sid Scott,Sweden,$28 million,Sweden
