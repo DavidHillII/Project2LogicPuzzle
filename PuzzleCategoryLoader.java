@@ -18,7 +18,7 @@ public class PuzzleCategoryLoader {
         loadCategories(filePath);
     }
 
-    private void loadCategories(String filePath) {
+    public void loadCategories(String filePath) {
         try (Scanner scanner = new Scanner(new File(filePath))) {
             if (scanner.hasNextLine()) {
                 // Load the first row as headers
