@@ -10,7 +10,7 @@ public class PuzzleCluesLoader { //class for loading the list of clues from a cs
         loadClues(filePath); //load the clues from the file
     }
 
-    private void loadClues(String filePath) { //function for loading clues
+    public void loadClues(String filePath) { //function for loading clues
         try (Scanner scanner = new Scanner(new File(filePath))) { //Creates a scanner and implements a try catch in order to successfully read through a csv file.
             while (scanner.hasNextLine()) { //Reads the file line of the csv file
                 String line = scanner.nextLine().trim(); //Stores the text in a string.

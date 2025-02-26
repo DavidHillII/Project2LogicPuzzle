@@ -16,19 +16,25 @@ public class PuzzleGridController {
     private URL location;
     protected PuzzleCategoryLoader categoryLoader; //makes a category loader
     protected PuzzleDataLoader dataLoader; //makes a data loader
+    protected PuzzleCluesLoader clueLoader; //makes a clue loader
+    protected PuzzleHintLoader hintLoader; //makes a hint loader
     private List<Button> moveHistory = new ArrayList<>(); //makes a list of buttons that hold move history of the player
     private List<String[]> buttonPairs = new ArrayList<>(); //makes a list of the correct button pairs
     private List<Button> buttons = new ArrayList<>(); //makes a list of all the buttons
 
-    public PuzzleGridController(String categoryFile, String dataFile) {
+    public PuzzleGridController(String categoryFile, String dataFile, String clueFile, String hintFile) {
         categoryLoader = new PuzzleCategoryLoader(categoryFile);
         dataLoader = new PuzzleDataLoader(dataFile);
+        clueLoader = new PuzzleCluesLoader(clueFile);
+        hintLoader = new PuzzleHintLoader(hintFile);
         initialize();
     }
 
     private void initialize() {
-        categoryLoader.loadCategories("CSVCategories.txt");
+        categoryLoader.loadCategories("PuzzleCategories.csv");
         dataLoader.loadCSV("PuzzleSolutions.csv");
+        clueLoader.loadClues("PuzzleClues.csv");
+        hintLoader.loadHints("PuzzleHints.csv");
         // this is
         // hint =loader.loadHints("CSVHints.txt");
         setupGrid();
