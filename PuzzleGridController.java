@@ -1,4 +1,4 @@
-//David Hill Valerie very unfinished just some ideas based on what you sent me
+//David Hill Valerie Game Controller class for the UI Grid
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
@@ -14,11 +14,11 @@ public class PuzzleGridController {
 
     @FXML
     private URL location;
-    protected PuzzleCategoryLoader categoryLoader;
-    protected PuzzleDataLoader dataLoader;
-    private List<Button> moveHistory = new ArrayList<>();
-    private List<String[]> buttonPairs = new ArrayList<>();
-    private List<Button> buttons = new ArrayList<>();
+    protected PuzzleCategoryLoader categoryLoader; //makes a category loader
+    protected PuzzleDataLoader dataLoader; //makes a data loader
+    private List<Button> moveHistory = new ArrayList<>(); //makes a list of buttons that hold move history of the player
+    private List<String[]> buttonPairs = new ArrayList<>(); //makes a list of the correct button pairs
+    private List<Button> buttons = new ArrayList<>(); //makes a list of all the buttons
 
     public PuzzleGridController(String categoryFile, String dataFile) {
         categoryLoader = new PuzzleCategoryLoader(categoryFile);

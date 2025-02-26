@@ -1,4 +1,4 @@
-//Valerie David
+//Valerie David Launch file for the game and the main class
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
