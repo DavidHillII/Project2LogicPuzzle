@@ -12,59 +12,32 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="715.0" style="-fx-background-color: #ede9da;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ImageView blendMode="MULTIPLY" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" translateX="450.0" translateY="50.0">
+      <Label text="Created by: Valerie, David, and Anthony" />
+      <Label alignment="CENTER" prefHeight="27.0" prefWidth="176.0" style="-fx-background-color: #339933;" text="Header" translateX="540.0" translateY="170.0" wrapText="true">
+         <font>
+            <Font name="Cooper Black" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="176.0" style="-fx-background-color: #339933;" text="Header" translateX="540.0" translateY="178.0" wrapText="true">
+         <font>
+            <Font name="Cooper Black" size="19.0" />
+         </font>
+      </Label>
+      <ImageView blendMode="MULTIPLY" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" translateX="450.0" translateY="-10.0">
          <image>
             <Image url="@dc5985011ad239541d20e54ddefda5f8.jpg" />
          </image>
       </ImageView>
-      <Label text="Logic Puzzle Game" translateX="250.0" translateY="-30.0">
+      <Label text="Logic Puzzle Game" textFill="#339933" translateX="250.0" translateY="-100.0">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="26.0" />
          </font>
       </Label>
-      <Label prefHeight="28.0" prefWidth="104.0" text="Hints" textFill="#339933" translateX="450.0" translateY="250.0">
-         <font>
-            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
-         </font>
-      </Label>
-      <TextArea editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="160.0" prefWidth="250.0" promptText="Hints are loaded here.." style="-fx-background-color: #fdfbd4;" translateX="450.0" translateY="250.0" wrapText="true" />
-      <Button mnemonicParsing="false" style="-fx-background-color: #339933;" text="Start Over" translateX="300.0" translateY="225.0">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
-      <Button mnemonicParsing="false" style="-fx-background-color: #339933;" text="Undo" translateX="200.0" translateY="200.0">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
-      <Label alignment="CENTER" prefHeight="30.0" prefWidth="169.0" text="Header" translateX="550.0" translateY="-130.0">
-         <font>
-            <Font name="Cooper Black" size="20.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER" prefHeight="17.0" prefWidth="170.0" text="Header" translateX="375.0" translateY="-153.0">
-         <font>
-            <Font name="Cooper Black" size="19.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="173.0" text="Header" translateX="200.0" translateY="-178.0">
-         <font>
-            <Font name="Cooper Black" size="19.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER" prefHeight="27.0" prefWidth="200.0" text="Header" translateY="-200.0">
-         <font>
-            <Font name="Cooper Black" size="18.0" />
-         </font>
-      </Label>
-      <GridPane gridLinesVisible="true" translateY="-200.0">
+      <GridPane prefHeight="111.0" prefWidth="714.0" style="-fx-background-color: #339933;" translateY="10.0">
          <columnConstraints>
             <ColumnConstraints />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" prefWidth="150.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" prefWidth="150.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" prefWidth="150.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" prefWidth="150.0" />
@@ -72,108 +45,156 @@
          <rowConstraints>
             <RowConstraints />
             <RowConstraints />
-            <RowConstraints />
-            <RowConstraints />
+            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+            <RowConstraints maxHeight="17.0" minHeight="17.0" prefHeight="17.0" />
             <RowConstraints maxHeight="47.0" prefHeight="23.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="30.0" minHeight="19.0" prefHeight="20.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="30.0" minHeight="25.0" prefHeight="26.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="30.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="16.0" minHeight="-Infinity" prefHeight="16.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="-Infinity" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Label text="Label" GridPane.rowIndex="4" />
-            <Label text="Label" GridPane.rowIndex="5" />
-            <Label text="Label" GridPane.rowIndex="6" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="31.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="53.0" text="Label" translateX="30.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" translateX="90.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label text="Label" GridPane.rowIndex="7" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" translateX="130.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="200.0" text="Label" wrapText="true" GridPane.rowIndex="6" />
+            <Label alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="199.0" text="Label" wrapText="true" GridPane.rowIndex="7" />
+            <Label alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="199.0" text="Label" wrapText="true" GridPane.rowIndex="8" />
+            <Label alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="199.0" text="Label" wrapText="true" GridPane.rowIndex="9" />
             <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="32.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="32.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
             <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="32.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="32.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
             <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
             <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
             <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="32.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="32.0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="32.0" GridPane.columnIndex="3" GridPane.rowIndex="8" />
             <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="3" GridPane.rowIndex="8" />
             <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="3" GridPane.rowIndex="8" />
             <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
             <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="42.0" translateX="130.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
             <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="31.0" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="31.0" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="31.0" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="53.0" text="Label" translateX="30.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="53.0" text="Label" translateX="30.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="53.0" text="Label" translateX="30.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="53.0" text="Label" translateX="90.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="53.0" text="Label" translateX="90.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="53.0" text="Label" translateX="90.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" translateX="130.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" translateX="130.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" translateX="130.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="31.0" text="Label" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="53.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="30.0" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="40.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="90.0" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="42.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="90.0" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="130.0" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="130.0" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="201.0" style="-fx-background-color: #339933;" text="Header" wrapText="true" GridPane.rowIndex="11">
+               <font>
+                  <Font name="Cooper Black" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="200.0" text="Label" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.rowIndex="12" />
+            <Label alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="199.0" text="Label" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.rowIndex="13" />
+            <Label alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="197.0" text="Label" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.rowIndex="14" />
+            <Label alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="197.0" text="Label" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.rowIndex="15" />
+            <Label fx:id="header1" alignment="CENTER" prefHeight="27.0" prefWidth="200.0" text="Header" wrapText="true" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Cooper Black" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="23.0" prefWidth="171.0" style="-fx-background-color: #339933;" text="Header" translateY="-12.0" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Cooper Black" size="19.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="15.0" prefWidth="32.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="15.0" prefWidth="32.0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+            <Button mnemonicParsing="false" style="-fx-background-color: #339933;" text="Clear Errors" GridPane.columnIndex="2" GridPane.rowIndex="12">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" style="-fx-background-color: #339933;" text="Undo" translateY="15.0" GridPane.columnIndex="2" GridPane.rowIndex="13">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" style="-fx-background-color: #339933;" text="Start Over" GridPane.columnIndex="2" GridPane.rowIndex="15">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label prefHeight="28.0" prefWidth="104.0" text="Hints" GridPane.columnIndex="3" GridPane.rowIndex="12">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+               </font>
+            </Label>
+            <TextArea editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="85.0" prefWidth="171.0" promptText="Hints are loaded here.." scaleX="1.3" style="-fx-background-color: #fdfbd4;" translateX="-30.0" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="14" GridPane.rowSpan="2" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="53.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="30.0" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="53.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="30.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="31.0" text="Label" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="31.0" text="Label" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="42.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="90.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="130.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
          </children>
          <VBox.margin>
             <Insets top="3.0" />
          </VBox.margin>
       </GridPane>
-      <Button mnemonicParsing="false" style="-fx-background-color: #339933;" text="Clear Errors" translateX="50.0" translateY="-30.0">
+      <Label alignment="CENTER" prefHeight="14.0" prefWidth="174.0" style="-fx-background-color: #339933;" text="Header" translateX="200.0" translateY="-326.0" wrapText="true">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="Cooper Black" size="19.0" />
          </font>
-      </Button>
+      </Label>
    </children>
 </VBox>
