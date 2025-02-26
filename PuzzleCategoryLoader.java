@@ -38,36 +38,36 @@ public class PuzzleCategoryLoader {
         }
     }
 
-    public List<String> getHeaders() {
+    public List<String> getHeaders() { // function for retrieving the list of headers.
         return headers;
     }
 
-    public List<String> getCategory1() {
+    public List<String> getCategory1() { // function for retrieving the list of subjects in category 1
         return categories_1;
     }
 
-    public List<String> getCategory2() {
+    public List<String> getCategory2() { // function for retrieving the list of subjects in category 2
         return categories_2;
     }
 
-    public List<String> getCategory3() {
+    public List<String> getCategory3() { // function for retrieving the list of subjects in category 3
         return categories_3;
     }
 
-    public List<String> getCategory4() {
+    public List<String> getCategory4() { // function for retrieving the list of subjects in category 4
         return categories_4;
     }
-    // Returns the list of items for the given category
-    public List<String> getItemsForCategory(String category) {
+
+    public List<String> getItemsForCategory(String category) { // Returns the list of items for the given category
         int index = headers.indexOf(category);
         switch (index) {
-            case 0:
+            case 0: //first case for category 1
                 return categories_1;
-            case 1:
+            case 1: //second case for category 2
                 return categories_2;
-            case 2:
+            case 2: //third case for category 3
                 return categories_3;
-            case 3:
+            case 3: //fourth case for category 4
                 return categories_4;
             default:
                 return new ArrayList<>();

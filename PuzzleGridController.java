@@ -1,4 +1,4 @@
-//David Hill very unfinished just some ideas based on what you sent me
+//David Hill Valerie very unfinished just some ideas based on what you sent me
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
