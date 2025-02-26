@@ -26,7 +26,6 @@ public class PuzzleGridController {
         categoryLoader = new PuzzleCategoryLoader(categoryFile);
         dataLoader = new PuzzleDataLoader(dataFile);
         clueLoader = new PuzzleCluesLoader(clueFile);
-        hintLoader = new PuzzleHintLoader(hintFile);
         initialize();
     }
 
@@ -34,7 +33,6 @@ public class PuzzleGridController {
         categoryLoader.loadCategories("PuzzleCategories.csv");
         dataLoader.loadCSV("PuzzleSolutions.csv");
         clueLoader.loadClues("PuzzleClues.csv");
-        hintLoader.loadHints("PuzzleHints.csv");
         // this is
         // hint =loader.loadHints("CSVHints.txt");
         setupGrid();
