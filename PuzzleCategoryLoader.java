@@ -3,40 +3,38 @@ import java.io.*;
 import java.util.*;
 
 public class PuzzleCategoryLoader {
-    private List<String> headers;
-    private List<String> categories_1;
-    private List<String> categories_2;
-    private List<String> categories_3;
-    private List<String> categories_4;
+    private List<String> headers; //Storage for the main categories of your logic puzzle
+    private List<String> categories_1; //Storage for the subjects of your first header
+    private List<String> categories_2; //Storage for the subjects of your second header
+    private List<String> categories_3; //Storage for the subjects of your third header
+    private List<String> categories_4; //Storage for the subjects of your fourth header
 
     public PuzzleCategoryLoader(String filePath) {
         headers = new ArrayList<>();
-        categories_1 = new ArrayList<>();
-        categories_2 = new ArrayList<>();
-        categories_3 = new ArrayList<>();
-        categories_4 = new ArrayList<>();
-        loadCategories(filePath);
+        categories_1 = new ArrayList<>(); //ArrayList for the subjects of your first header
+        categories_2 = new ArrayList<>(); //ArrayList for the subjects of your second header
+        categories_3 = new ArrayList<>(); //ArrayList for the subjects of your third header
+        categories_4 = new ArrayList<>(); //ArrayList for the subjects of your fourth header
+        loadCategories(filePath); //Loads the file
     }
 
     public void loadCategories(String filePath) {
-        try (Scanner scanner = new Scanner(new File(filePath))) {
-            if (scanner.hasNextLine()) {
-                // Load the first row as headers
-                headers = Arrays.asList(scanner.nextLine().split(","));
+        try (Scanner scanner = new Scanner(new File(filePath))) { //Creates a scanner for your file and in a try catch attempt to read the file.
+            if (scanner.hasNextLine()) { //if there is a next line have the scanner interpret it
+                headers = Arrays.asList(scanner.nextLine().split(",")); // Load the first row as headers
             }
 
-            // Load each of the next rows into separate ArrayLists
-            while (scanner.hasNextLine()) {
-                String[] items = scanner.nextLine().split(",");
-                if (items.length >= 4) { // Ensure we have enough columns
-                    categories_1.add(items[0]);
-                    categories_2.add(items[1]);
-                    categories_3.add(items[2]);
-                    categories_4.add(items[3]);
+            while (scanner.hasNextLine()) { // Load each of the next rows into separate ArrayLists
+                String[] different_Categories = scanner.nextLine().split(","); //Grabs the next line full the first item in each category and splits it at the comma, while storing it in a list of strings.
+                if (different_Categories.length >= 4) {
+                    categories_1.add(different_Categories[0]); //Grabs the first index and stores it in the arraylist
+                    categories_2.add(different_Categories[1]); //Grabs the second index and stores it in the arraylist
+                    categories_3.add(different_Categories[2]); //Grabs the third index and stores it in the arraylist
+                    categories_4.add(different_Categories[3]); //Grabs the fourth index and stores it in the arraylist
                 }
             }
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException e) { //Catches any possible I/O errors to avoid a warning
+            e.printStackTrace(); //print stack trace
         }
     }
 
