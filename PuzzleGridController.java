@@ -63,7 +63,7 @@ public class PuzzleGridController {
     private void toggleCell(Button button, String rowItem, String colItem) {
         if (dataLoader.isCorrectPair(rowItem, colItem)) {
             button.setStyle("-fx-background-color: green;");
-            button.setText("✓");
+            button.setText("O");
         } else {
             button.setStyle("-fx-background-color: red;");
             button.setText("X");
@@ -71,13 +71,6 @@ public class PuzzleGridController {
         moveHistory.add(button);
     }
 
-    public void undoLastMove() {
-        if (!moveHistory.isEmpty()) {
-            Button lastMove = moveHistory.remove(moveHistory.size() - 1);
-            lastMove.setStyle("");
-            lastMove.setText(" ");
-        }
-    }
 
     public void clearErrors() {
         for (Button button : buttons) {
