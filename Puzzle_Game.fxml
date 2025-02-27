@@ -34,7 +34,7 @@
             <Font name="Berlin Sans FB Demi Bold" size="26.0" />
          </font>
       </Label>
-      <GridPane prefHeight="111.0" prefWidth="714.0" style="-fx-background-color: #339933;" translateY="10.0">
+      <GridPane fx:id="puzzle_grid" prefHeight="111.0" prefWidth="714.0" style="-fx-background-color: #339933;" translateY="10.0">
          <columnConstraints>
             <ColumnConstraints />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" prefWidth="150.0" />
