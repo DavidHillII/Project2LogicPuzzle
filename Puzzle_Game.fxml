@@ -79,7 +79,7 @@
             <Button fx:id="button_18" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
             <Button fx:id="button_22" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
             <Button fx:id="button_26" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-            <Button fx:id="button_2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Button fx:id="button_3" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
             <Button fx:id="button_7" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
             <Button fx:id="button_11" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
             <Button fx:id="button_19" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
@@ -92,7 +92,7 @@
             <Button fx:id="button_24" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
             <Button fx:id="button_28" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
             <Label fx:id="label_7" alignment="CENTER" prefHeight="17.0" prefWidth="40.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="90.0" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Label fx:id="Label_8" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="130.0" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label fx:id="label_8" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="130.0" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
             <Label fx:id="header_4" alignment="CENTER" prefHeight="30.0" prefWidth="201.0" style="-fx-background-color: #339933;" text="Header" wrapText="true" GridPane.rowIndex="12">
                <font>
                   <Font name="Cooper Black" size="18.0" />
@@ -162,7 +162,7 @@
             <Label fx:id="label_2" alignment="CENTER" prefHeight="17.0" prefWidth="53.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="30.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <Label fx:id="label_1" alignment="CENTER" prefHeight="17.0" prefWidth="31.0" text="Label" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <Label fx:id="label_5" alignment="CENTER" prefHeight="17.0" prefWidth="31.0" text="Label" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Label fx:id="labeL3" alignment="CENTER" prefHeight="17.0" prefWidth="42.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="90.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="label_3" alignment="CENTER" prefHeight="17.0" prefWidth="42.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="90.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <Label fx:id="label_4" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="130.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <TextArea fx:id="clues_text" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="70.0" prefWidth="171.0" promptText="Clues are loaded here.." style="-fx-background-color: #fdfbd4;" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="6" GridPane.rowSpan="2" />
             <Label alignment="CENTER" prefHeight="27.0" prefWidth="176.0" style="-fx-background-color: #339933;" text="Clues" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="4">

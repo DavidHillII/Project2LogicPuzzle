@@ -12,12 +12,12 @@ public class PuzzleGame extends Application {
     public static void main(String[] args) {
         launch(args);
         // tests CsvSolutions.txt
-        PuzzleDataLoader dataLoader = new PuzzleDataLoader("C:\\Users\\valer\\Desktop\\CS225\\Project2\\CSVSolutions.txt");
+        PuzzleDataLoader dataLoader = new PuzzleDataLoader("PuzzleSolutions.csv");
         for (String pair : dataLoader.getCorrectPairs()) {
             System.out.println(pair);
         }
         // tests CSVCategories.txt
-        PuzzleCategoryLoader categoryLoader = new PuzzleCategoryLoader("C:\\Users\\valer\\Desktop\\CS225\\Project2\\CSVCategories.txt");
+        PuzzleCategoryLoader categoryLoader = new PuzzleCategoryLoader("PuzzleCategory.csv");
         for (String category : categoryLoader.getCategory1()) {
             System.out.println(category);
             for (String category2 : categoryLoader.getCategory2()) {
