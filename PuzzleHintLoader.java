@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import javafx.scene.control.TextArea;
 
@@ -10,24 +9,25 @@ public class PuzzleHintLoader {
 
     public PuzzleHintLoader(TextArea hintDisplay) {
         this.hintDisplay = hintDisplay;
-        loadHints();
+        hints = loadHints();
         hintIndex = 0;
     }
 
-    private void loadHints() {
-        hints = new ArrayList<>();
-        
-        hints.add("Think about connections between countries and billionaires.");
-        hints.add("Some billionaires have the same wealth but are from different countries.");
-        hints.add("Look for patterns in the amounts—do you see a trend?");
-        hints.add("One billionaire and one country always match.");
-        hints.add("Some values repeat with different names.");
-        hints.add("Try grouping similar values together.");
-        hints.add("Every person and every country appears at least once.");
-        hints.add("Finding one correct pair might help uncover others.");
-        hints.add("Cross out incorrect guesses to narrow your choices.");
-        hints.add("If two answers contradict, one must be wrong.");
-        
+    private List<String> loadHints() {
+        List<String> loadedHints = new ArrayList<>();
+        loadedHints.add("The person with $25 billion traveled to the country of another billionaire.");
+        loadedHints.add("Al Acosta did not visit his own country.");
+        loadedHints.add("The person who went to Norway has exactly $1 billion less than the person who went to France.");
+        loadedHints.add("Sid Scott and Leonard Levy did not travel to each other’s home countries.");
+        loadedHints.add("The wealthiest traveler did not go to Argentina.");
+        loadedHints.add("The person worth $27 billion traveled to a country whose name starts with 'F'.");
+        loadedHints.add("The person who traveled to Sweden has more wealth than the person who traveled to Argentina.");
+        loadedHints.add("Hal Hickman’s destination was not in Europe.");
+        loadedHints.add("The billionaire who traveled to Norway has an even-numbered wealth amount.");
+        loadedHints.add("Neither Sid Scott nor Leonard Levy traveled to Sweden.");
+        loadedHints.add("The person with $28 billion and the person who traveled to France are not the same.");
+        loadedHints.add("One billionaire traveled to their own home country, but it wasn’t Al Acosta.");
+        return loadedHints;
     }
 
     public void dropHint() {
@@ -42,6 +42,5 @@ public class PuzzleHintLoader {
     public void resetHints() {
         hintIndex = 0;
         hintDisplay.clear();
-        Collections.shuffle(hints);
     }
 }
