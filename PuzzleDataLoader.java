@@ -28,3 +28,15 @@ public class PuzzleDataLoader {
             e.printStackTrace();
         }
     }
+
+    public boolean isCorrectPair(String item1, String item2) {
+        if (item1 == null || item2 == null) return false;
+        String pair1 = item1.trim() + "," + item2.trim();
+        String pair2 = item2.trim() + "," + item1.trim();
+        return correctPairs.contains(pair1) || correctPairs.contains(pair2);
+    }
+
+    public List<String> getCorrectPairs() {
+        return correctPairs;
+    }
+}
