@@ -61,6 +61,16 @@ public class PuzzleGridController {
         dataLoader.loadCSV("PuzzleSolutions.csv");
         clueLoader.loadClues("PuzzleClues.csv");
         loadClues();
+        buttons.addAll(Arrays.asList( button_1,button_2,button_3,button_4,button_5,button_6,button_7,button_8,
+        button_9,button_10,button_11,button_12,button_13,button_14,button_15,button_16,
+        button_17,button_18,button_19,button_20,button_21,button_22,button_23,button_24,
+        button_25,button_26,button_27,button_28,button_29,button_30,button_31,button_32,
+        button_33,button_34,button_35,button_36,button_37,button_38,button_39,button_40,
+        button_41,button_42,button_43,button_44,button_45,button_46,button_47,button_48));
+
+        for (Button button : buttons) {
+            button.setOnAction(event -> toggleCell(button, null, null));
+        }
 
 
 
