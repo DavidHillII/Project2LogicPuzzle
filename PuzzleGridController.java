@@ -21,6 +21,12 @@ public class PuzzleGridController {
 
     // Buttons for grid interaction
     @FXML private Button hints, clear_errors, clues, start_over;
+    @FXML private List <Button> button_1,button_2,button_3,button_4,button_5,button_6,button_7,button_8,
+    button_9,button_10,button_11,button_12,button_13,button_14,button_15,button_16,
+    button_17,button_18,button_19,button_20,button_21,button_22,button_23,button_24,
+    button_25,button_26,button_27,button_28,button_29,button_30,button_31,button_32,
+    button_33,button_34,button_35,button_36,button_37,button_38,button_39,button_40,
+    button_41,button_42,button_43,button_44,button_45,button_46,button_47,button_48;
 
     // Text areas for displaying hints and clues
     @FXML private TextArea hints_text, clues_text;
@@ -38,6 +44,12 @@ public class PuzzleGridController {
         // Empty constructor - JavaFX will call @FXML initialize()
     }
 
+    private void loadClues() {
+        // Implement the logic to load clues here
+        // For example, you can set the text of the clues_text TextArea
+        clues_text.setText(clueLoader.get_List_Of_Clues().toString());
+    }
+
     @FXML
     private void initialize() {
         categoryLoader = new PuzzleCategoryLoader("PuzzleCategories.csv");
@@ -47,6 +59,14 @@ public class PuzzleGridController {
         categoryLoader.loadCategories("PuzzleCategories.csv");
         dataLoader.loadCSV("PuzzleSolutions.csv");
         clueLoader.loadClues("PuzzleClues.csv");
+        loadClues();
+        buttons.addAll(Arrays.asList(button_1,button_2,button_3,button_4,button_5,button_6,button_7,button_8,
+        button_9,button_10,button_11,button_12,button_13,button_14,button_15,button_16,
+        button_17,button_18,button_19,button_20,button_21,button_22,button_23,button_24,
+        button_25,button_26,button_27,button_28,button_29,button_30,button_31,button_32,
+        button_33,button_34,button_35,button_36,button_37,button_38,button_39,button_40,
+        button_41,button_42,button_43,button_44,button_45,button_46,button_47,button_48));
+
 
         // Debug: Check if headers are loaded
         List<String> headers = categoryLoader.getHeaders();
@@ -89,9 +109,9 @@ public class PuzzleGridController {
         
         // Example call to toggleCell method
         // Assuming you have a button and row/column items to pass
-        Button exampleButton = new Button();
-        buttons.add(exampleButton); // Add to buttons list for clearGrid and clearErrors methods
-        toggleCell(exampleButton, "exampleRowItem", "exampleColItem");
+        Button button = new Button();
+        buttons.add(button); // Add to buttons list for clearGrid and clearErrors methods
+        toggleCell(button, "exampleRowItem", "exampleColItem");
     }
 
 
