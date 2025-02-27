@@ -1,6 +1,8 @@
 //David Hill Valerie Game Controller class for the UI Grid
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.layout.GridPane;
 import java.util.*;
 import java.net.URL;
@@ -50,19 +52,19 @@ public class PuzzleGridController {
     }
 
     private void setupGrid() {
-        gridPane.getChildren().clear();
+        puzzle_grid.getChildren().clear();
         List<String> rowLabels = categoryLoader.getItemsForCategory("Rows");
         List<String> colLabels = categoryLoader.getItemsForCategory("Columns");
         for (int col = 0; col < colLabels.size(); col++) {
             Button label = new Button(colLabels.get(col));
             label.setDisable(true);
-            gridPane.add(label, col + 1, 0);
+            puzzle_grid.add(label, col + 1, 0);
         }
 
         for (int row = 0; row < rowLabels.size(); row++) {
             Button label = new Button(rowLabels.get(row));
             label.setDisable(true);
-            gridPane.add(label, 0, row + 1);
+            puzzle_grid.add(label, 0, row + 1);
             for (int col = 0; col < colLabels.size(); col++) {
                 Button cellButton = new Button(" ");
                 final String rowItem = rowLabels.get(row);
@@ -70,7 +72,7 @@ public class PuzzleGridController {
                 buttonPairs.add(new String[] { rowItem, colItem });
                 buttons.add(cellButton);
                 cellButton.setOnAction(e -> toggleCell(cellButton, rowItem, colItem));
-                gridPane.add(cellButton, col + 1, row + 1);
+                puzzle_grid.add(cellButton, col + 1, row + 1);
             }
         }
     }
