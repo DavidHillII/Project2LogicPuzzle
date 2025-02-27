@@ -36,10 +36,10 @@
       </Label>
       <GridPane fx:id="puzzle_grid" prefHeight="111.0" prefWidth="714.0" style="-fx-background-color: #339933;" translateY="10.0">
          <columnConstraints>
-            <ColumnConstraints />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" prefWidth="150.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" prefWidth="150.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" prefWidth="150.0" />
+            <ColumnConstraints maxWidth="195.0" minWidth="141.0" prefWidth="141.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="232.0" minWidth="-Infinity" prefWidth="215.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="261.0" minWidth="-Infinity" prefWidth="241.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="-Infinity" prefWidth="117.0" />
          </columnConstraints>
          <rowConstraints>
             <RowConstraints />
@@ -62,46 +62,76 @@
             <RowConstraints maxHeight="30.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Label fx:id="label_9" alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="200.0" text="Label" wrapText="true" GridPane.rowIndex="6" />
-            <Label fx:id="label_10" alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="199.0" text="Label" wrapText="true" GridPane.rowIndex="8" />
-            <Label fx:id="label_11" alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="199.0" text="Label" wrapText="true" GridPane.rowIndex="9" />
-            <Label fx:id="label_12" alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="199.0" text="Label" wrapText="true" GridPane.rowIndex="10" />
-            <Button fx:id="button_1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <Button fx:id="button_5" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-            <Button fx:id="button_9" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label fx:id="label_9" alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="200.0" text="Label" wrapText="true" GridPane.rowIndex="6">
+               <font>
+                  <Font size="9.0" />
+               </font></Label>
+            <Label fx:id="label_10" alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="199.0" text="Label" wrapText="true" GridPane.rowIndex="8">
+               <font>
+                  <Font size="9.0" />
+               </font></Label>
+            <Label fx:id="label_11" alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="199.0" text="Label" wrapText="true" GridPane.rowIndex="9">
+               <font>
+                  <Font size="9.0" />
+               </font></Label>
+            <Label fx:id="label_12" alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="199.0" text="Label" wrapText="true" GridPane.rowIndex="10">
+               <font>
+                  <Font size="9.0" />
+               </font></Label>
+            <Button fx:id="button_1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Button fx:id="button_5" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Button fx:id="button_9" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
             <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="32.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
-            <Button fx:id="button_17" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-            <Button fx:id="button_21" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-            <Button fx:id="button_25" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="32.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-            <Button fx:id="button_2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <Button fx:id="button_6" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-            <Button fx:id="button_10" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-            <Button fx:id="button_18" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-            <Button fx:id="button_22" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-            <Button fx:id="button_26" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-            <Button fx:id="button_3" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <Button fx:id="button_7" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-            <Button fx:id="button_11" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-            <Button fx:id="button_19" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-            <Button fx:id="button_23" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-            <Button fx:id="button_27" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-            <Button fx:id="button_4" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <Button fx:id="button_8" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-            <Button fx:id="button_12" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-            <Button fx:id="button_20" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-            <Button fx:id="button_24" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-            <Button fx:id="button_28" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-            <Label fx:id="label_7" alignment="CENTER" prefHeight="17.0" prefWidth="40.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="90.0" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Label fx:id="label_8" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="130.0" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button fx:id="button_17" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Button fx:id="button_21" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <Button fx:id="button_25" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <Button fx:id="button_2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="80.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Button fx:id="button_6" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="80.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Button fx:id="button_10" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="80.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Button fx:id="button_18" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="87.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Button fx:id="button_22" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" translateX="87.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <Button fx:id="button_26" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="58.0" translateX="87.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <Button fx:id="button_3" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="137.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Button fx:id="button_7" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="137.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Button fx:id="button_11" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="42.0" translateX="137.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Button fx:id="button_19" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="145.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Button fx:id="button_23" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="145.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <Button fx:id="button_27" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="42.0" translateX="145.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <Button fx:id="button_4" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="178.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Button fx:id="button_8" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="178.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Button fx:id="button_12" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="40.0" translateX="178.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Button fx:id="button_20" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="185.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Button fx:id="button_24" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="185.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <Button fx:id="button_28" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="40.0" translateX="185.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <Label fx:id="label_7" alignment="CENTER" prefHeight="17.0" prefWidth="54.0" text="Label" textOverrun="LEADING_WORD_ELLIPSIS" translateX="142.0" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="9.0" />
+               </font></Label>
+            <Label fx:id="label_8" alignment="CENTER" lineSpacing="5.0" prefHeight="17.0" prefWidth="53.0" text="Label" textOverrun="LEADING_ELLIPSIS" translateX="189.0" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="9.0" />
+               </font></Label>
             <Label fx:id="header_4" alignment="CENTER" prefHeight="30.0" prefWidth="201.0" style="-fx-background-color: #339933;" text="Header" wrapText="true" GridPane.rowIndex="12">
                <font>
                   <Font name="Cooper Black" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="label_13" alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="200.0" text="Label" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.rowIndex="13" />
-            <Label fx:id="label_14" alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="199.0" text="Label" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.rowIndex="14" />
-            <Label fx:id="label_15" alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="197.0" text="Label" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.rowIndex="15" />
-            <Label fx:id="label_16" alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="197.0" text="Label" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.rowIndex="16" />
+            <Label fx:id="label_13" alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="200.0" text="Label" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.rowIndex="13">
+               <font>
+                  <Font size="9.0" />
+               </font></Label>
+            <Label fx:id="label_14" alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="199.0" text="Label" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.rowIndex="14">
+               <font>
+                  <Font size="9.0" />
+               </font></Label>
+            <Label fx:id="label_15" alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="197.0" text="Label" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.rowIndex="15">
+               <font>
+                  <Font size="9.0" />
+               </font></Label>
+            <Label fx:id="label_16" alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="197.0" text="Label" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.rowIndex="16">
+               <font>
+                  <Font size="9.0" />
+               </font></Label>
             <Label fx:id="header_3" alignment="CENTER" prefHeight="27.0" prefWidth="200.0" text="Header" wrapText="true" GridPane.rowIndex="5">
                <font>
                   <Font name="Cooper Black" size="18.0" />
@@ -112,37 +142,37 @@
                   <Font name="Cooper Black" size="19.0" />
                </font>
             </Label>
-            <Button fx:id="button_41" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
-            <Button fx:id="button_37" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
-            <Button fx:id="button_45" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
-            <Button fx:id="button_13" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <Button fx:id="button_41" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+            <Button fx:id="button_37" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            <Button fx:id="button_45" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+            <Button fx:id="button_13" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
             <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
-            <Button fx:id="button_34" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
-            <Button fx:id="button_38" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
-            <Button fx:id="button_42" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
-            <Button fx:id="button_46" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
-            <Button fx:id="button_14" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
-            <Button fx:id="button_30" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="30.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
-            <Button fx:id="button_15" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
-            <Button fx:id="button_31" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
-            <Button fx:id="button_16" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
-            <Button fx:id="button_29" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="15.0" prefWidth="32.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
-            <Button fx:id="button_32" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
-            <Button fx:id="button_33" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
-            <Button fx:id="button_35" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
-            <Button fx:id="button_39" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
-            <Button fx:id="button_43" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
-            <Button fx:id="button_47" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="88.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
-            <Button fx:id="button_36" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
-            <Button fx:id="button_40" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
-            <Button fx:id="button_44" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
-            <Button fx:id="button_48" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="130.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
-            <Button fx:id="clear_errors" mnemonicParsing="false" style="-fx-background-color: #339933;" text="Clear Errors" GridPane.columnIndex="2" GridPane.rowIndex="13">
+            <Button fx:id="button_34" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="80.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <Button fx:id="button_38" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="80.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            <Button fx:id="button_42" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="80.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+            <Button fx:id="button_46" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="80.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+            <Button fx:id="button_14" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="80.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <Button fx:id="button_30" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="58.0" translateX="87.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+            <Button fx:id="button_15" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="42.0" translateX="137.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <Button fx:id="button_31" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="42.0" translateX="145.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+            <Button fx:id="button_16" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="40.0" translateX="178.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <Button fx:id="button_29" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+            <Button fx:id="button_32" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="40.0" translateX="185.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+            <Button fx:id="button_33" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <Button fx:id="button_35" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="137.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <Button fx:id="button_39" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="137.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            <Button fx:id="button_43" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="137.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+            <Button fx:id="button_47" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="42.0" translateX="137.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+            <Button fx:id="button_36" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="178.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <Button fx:id="button_40" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="178.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            <Button fx:id="button_44" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="178.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+            <Button fx:id="button_48" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0" translateX="178.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+            <Button fx:id="clear_errors" mnemonicParsing="false" onAction="#clearErrors" style="-fx-background-color: #66ff33;" text="Clear Errors" GridPane.columnIndex="2" GridPane.rowIndex="13">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="start_over" mnemonicParsing="false" style="-fx-background-color: #339933;" text="Start Over" GridPane.columnIndex="2" GridPane.rowIndex="16">
+            <Button fx:id="start_over" mnemonicParsing="false" onAction="#clearGrid" style="-fx-background-color: #66ff33;" text="Start Over" GridPane.columnIndex="2" GridPane.rowIndex="16">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -153,24 +183,42 @@
                </font>
             </Label>
             <TextArea fx:id="hints_text" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="85.0" prefWidth="171.0" promptText="Hints are loaded here.." scaleX="1.3" style="-fx-background-color: #fdfbd4;" translateX="-30.0" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="15" GridPane.rowSpan="2" />
-            <Label fx:id="label_6" alignment="CENTER" prefHeight="17.0" prefWidth="53.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="30.0" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Label fx:id="label_2" alignment="CENTER" prefHeight="17.0" prefWidth="53.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="30.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Label fx:id="label_1" alignment="CENTER" prefHeight="17.0" prefWidth="31.0" text="Label" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Label fx:id="label_5" alignment="CENTER" prefHeight="17.0" prefWidth="31.0" text="Label" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Label fx:id="label_3" alignment="CENTER" prefHeight="17.0" prefWidth="42.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="90.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Label fx:id="label_4" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="130.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="label_6" alignment="CENTER" prefHeight="17.0" prefWidth="64.0" text="Label" textOverrun="LEADING_ELLIPSIS" translateX="80.0" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="9.0" />
+               </font></Label>
+            <Label fx:id="label_2" alignment="CENTER" prefHeight="17.0" prefWidth="65.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="64.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="9.0" />
+               </font></Label>
+            <Label fx:id="label_1" alignment="CENTER" prefHeight="17.0" prefWidth="79.0" text="Label" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="9.0" />
+               </font></Label>
+            <Label fx:id="label_5" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="70.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="15.0" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="9.0" />
+               </font></Label>
+            <Label fx:id="label_3" alignment="CENTER" prefHeight="17.0" prefWidth="62.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="120.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="9.0" />
+               </font></Label>
+            <Label fx:id="label_4" alignment="CENTER" prefHeight="17.0" prefWidth="70.0" text="Label" textOverrun="CENTER_ELLIPSIS" translateX="165.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="9.0" />
+               </font></Label>
             <TextArea fx:id="clues_text" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="70.0" prefWidth="171.0" promptText="Clues are loaded here.." style="-fx-background-color: #fdfbd4;" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="6" GridPane.rowSpan="2" />
             <Label alignment="CENTER" prefHeight="27.0" prefWidth="176.0" style="-fx-background-color: #339933;" text="Clues" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
                <font>
                   <Font name="Cooper Black" size="25.0" />
                </font>
             </Label>
-            <Button fx:id="hints" mnemonicParsing="false" style="-fx-background-color: #339933;" text="Hints" translateX="90.0" GridPane.columnIndex="3" GridPane.rowIndex="13">
+            <Button fx:id="hints" mnemonicParsing="false" style="-fx-background-color: #66ff33;" text="Hints" translateX="-50.0" GridPane.columnIndex="3" GridPane.rowIndex="13">
                <font>
                   <Font name="System Italic" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="clues" mnemonicParsing="false" style="-fx-background-color: #339933;" text="Clues" translateX="50.0" GridPane.columnIndex="3" GridPane.rowIndex="9">
+            <Button fx:id="clues" mnemonicParsing="false" style="-fx-background-color: #66ff33;" text="Clues" translateX="50.0" GridPane.columnIndex="3" GridPane.rowIndex="9">
                <font>
                   <Font name="System Italic" size="12.0" />
                </font>
