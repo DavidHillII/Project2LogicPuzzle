@@ -8,9 +8,20 @@ import java.util.ResourceBundle;
 
 public class PuzzleGridController {
     @FXML
-    private GridPane gridPane;
+    private GridPane puzzle_grid;
     @FXML
     private ResourceBundle resources;
+    @FXML private Label header_1, header_2, header_3, header_4;
+    @FXML private Label label_1,label_2,label_3,label_4,label_5,label_6,label_7;
+    @FXML private Label label_8,label_9,label_10,label_11,label_12,label_13,label_14,label_15,label_16;
+    @FXML private List <Button> button_1,button_2,button_3,button_4,button_5,button_6,button_7,button_8,
+    button_9,button_10,button_11,button_12,button_13,button_14,button_15,button_16,
+    button_17,button_18,button_19,button_20,button_21,button_22,button_23,button_24,
+    button_25,button_26,button_27,button_28,button_29,button_30,button_31,button_32,
+    button_33,button_34,button_35,button_36,button_37,button_38,button_39,button_40,
+    button_41,button_42,button_43,button_44,button_45,button_46,button_47,button_48;
+    @FXML private Button hints, undo, clear_errors, clues, start_over ;
+    @FXML private TextArea hints_text,clues_text;
 
     @FXML
     private URL location;
