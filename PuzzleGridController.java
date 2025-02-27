@@ -124,13 +124,19 @@ public class PuzzleGridController {
 
 
     private void toggleCell(Button button, String rowItem, String colItem) {
-        if (dataLoader.isCorrectPair(rowItem, colItem)) {
-            button.setStyle("-fx-background-color: green;");
+        String currentText = button.getText();
+
+        if (currentText.equals(" ")) {
             button.setText("O");
-        } else {
-            button.setStyle("-fx-background-color: red;");
+            button.setStyle("-fx-background-color: green;");
+        } else if (currentText.equals("O")) {
             button.setText("X");
+            button.setStyle("-fx-background-color: red;");
+        } else {
+            button.setText(" ");
+            button.setStyle(""); // Reset to default style
         }
+
         moveHistory.add(button);
     }
 
