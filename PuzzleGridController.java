@@ -36,9 +36,10 @@ public class PuzzleGridController {
     protected PuzzleCategoryLoader categoryLoader;
     protected PuzzleDataLoader dataLoader;
     protected PuzzleCluesLoader clueLoader;
+    protected PuzzleHintLoader hintLoader;
 
     private List<Button> moveHistory = new ArrayList<>(); // Stores move history
-    //private List<String[]> buttonPairs = new ArrayList<>(); // Stores correct button pairs
+    private List<String[]> buttonPairs = new ArrayList<>(); // Stores correct button pairs
     private List<Button> buttons = new ArrayList<>(); // Stores all buttons
 
     public PuzzleGridController() {
@@ -51,16 +52,23 @@ public class PuzzleGridController {
         clues_text.setText(clueLoader.get_List_Of_Clues().toString());
     }
 
+    private void loadHints() {
+        hints_text.setText(hintLoader.getHints().toString());
+    }
+
     @FXML
     private void initialize() {
         categoryLoader = new PuzzleCategoryLoader("PuzzleCategories.csv");
         dataLoader = new PuzzleDataLoader("PuzzleSolutions.csv");
         clueLoader = new PuzzleCluesLoader("PuzzleClues.csv");
+        hintLoader = new PuzzleHintLoader("PuzzleHints.csv");
 
         categoryLoader.loadCategories("PuzzleCategories.csv");
         dataLoader.loadCSV("PuzzleSolutions.csv");
         clueLoader.loadClues("PuzzleClues.csv");
         loadClues();
+        hintLoader.loadHints("PuzzleHints.csv");
+        loadHints();
         buttons.addAll(Arrays.asList( button_1,button_2,button_3,button_4,button_5,button_6,button_7,button_8,
         button_9,button_10,button_11,button_12,button_13,button_14,button_15,button_16,
         button_17,button_18,button_19,button_20,button_21,button_22,button_23,button_24,

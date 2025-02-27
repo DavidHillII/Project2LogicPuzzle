@@ -42,19 +42,19 @@ public class PuzzleCategoryLoader {
         return headers;
     }
 
-    public List<String> getCategory1() { // function for retrieving the list of subjects in category 1
+    public List<String> getCategory1() { // function for retrieving the list of subjects in the first index
         return categories_1;
     }
 
-    public List<String> getCategory2() { // function for retrieving the list of subjects in category 2
+    public List<String> getCategory2() { // function for retrieving the list of subjects in the second index
         return categories_2;
     }
 
-    public List<String> getCategory3() { // function for retrieving the list of subjects in category 3
+    public List<String> getCategory3() { // function for retrieving the list of subjects in the third index
         return categories_3;
     }
 
-    public List<String> getCategory4() { // function for retrieving the list of subjects in category 4
+    public List<String> getCategory4() { // function for retrieving the list of subjects in the fourth index
         return categories_4;
     }
 
