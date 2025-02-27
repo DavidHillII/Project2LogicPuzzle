@@ -20,7 +20,7 @@ public class PuzzleGridController {
     @FXML private Label label_13, label_14, label_15, label_16;
 
     // Buttons for grid interaction
-    @FXML private Button hints, undo, clear_errors, clues, start_over;
+    @FXML private Button hints, clear_errors, clues, start_over;
 
     // Text areas for displaying hints and clues
     @FXML private TextArea hints_text, clues_text;
@@ -31,7 +31,7 @@ public class PuzzleGridController {
     protected PuzzleCluesLoader clueLoader;
 
     private List<Button> moveHistory = new ArrayList<>(); // Stores move history
-    private List<String[]> buttonPairs = new ArrayList<>(); // Stores correct button pairs
+    //private List<String[]> buttonPairs = new ArrayList<>(); // Stores correct button pairs
     private List<Button> buttons = new ArrayList<>(); // Stores all buttons
 
     public PuzzleGridController() {
@@ -86,35 +86,16 @@ public class PuzzleGridController {
         }
 
         System.out.println("Headers and categories successfully loaded.");
+        
+        // Example call to toggleCell method
+        // Assuming you have a button and row/column items to pass
+        Button exampleButton = new Button();
+        buttons.add(exampleButton); // Add to buttons list for clearGrid and clearErrors methods
+        toggleCell(exampleButton, "exampleRowItem", "exampleColItem");
     }
 
 
-    private void setupGrid() {
-        puzzle_grid.getChildren().clear();
-        List<String> rowLabels = categoryLoader.getCategory1(); // First category as row labels
-        List<String> colLabels = categoryLoader.getCategory2(); // Second category as column labels
 
-        for (int col = 0; col < colLabels.size(); col++) {
-            Button label = new Button(colLabels.get(col));
-            label.setDisable(true);
-            puzzle_grid.add(label, col + 1, 0);
-        }
-
-        for (int row = 0; row < rowLabels.size(); row++) {
-            Button label = new Button(rowLabels.get(row));
-            label.setDisable(true);
-            puzzle_grid.add(label, 0, row + 1);
-            for (int col = 0; col < colLabels.size(); col++) {
-                Button cellButton = new Button(" ");
-                final String rowItem = rowLabels.get(row);
-                final String colItem = colLabels.get(col);
-                buttonPairs.add(new String[]{rowItem, colItem});
-                buttons.add(cellButton);
-                cellButton.setOnAction(e -> toggleCell(cellButton, rowItem, colItem));
-                puzzle_grid.add(cellButton, col + 1, row + 1);
-            }
-        }
-    }
 
     private void toggleCell(Button button, String rowItem, String colItem) {
         if (dataLoader.isCorrectPair(rowItem, colItem)) {
