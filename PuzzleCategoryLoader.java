@@ -9,17 +9,17 @@ public class PuzzleCategoryLoader {
     private List<String> categories_3; //Storage for the subjects of your third header
     private List<String> categories_4; //Storage for the subjects of your fourth header
 
-    public PuzzleCategoryLoader(String filePath) {
+    public PuzzleCategoryLoader(String fileName) {
         headers = new ArrayList<>();
         categories_1 = new ArrayList<>(); //ArrayList for the subjects of your first header
         categories_2 = new ArrayList<>(); //ArrayList for the subjects of your second header
         categories_3 = new ArrayList<>(); //ArrayList for the subjects of your third header
         categories_4 = new ArrayList<>(); //ArrayList for the subjects of your fourth header
-        loadCategories(filePath); //Loads the file
+        loadCategories(fileName); //Loads the file
     }
 
-    public void loadCategories(String filePath) {
-        try (Scanner scanner = new Scanner(new File(filePath))) { //Creates a scanner for your file and in a try catch attempt to read the file.
+    public void loadCategories(String fileName) {
+        try (Scanner scanner = new Scanner(new File(fileName))) { //Creates a scanner for your file and in a try catch attempt to read the file.
             if (scanner.hasNextLine()) { //if there is a next line have the scanner interpret it
                 headers = Arrays.asList(scanner.nextLine().split(",")); // Load the first row as headers
             }
