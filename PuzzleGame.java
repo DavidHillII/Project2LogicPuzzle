@@ -6,20 +6,16 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-//now working with fxml
-
 public class PuzzleGame extends Application {
     public static void main(String[] args) {
-        launch(args);
-
-        // tests CSVHints.txt
+        launch(args); //Launches he gui
     }
 
     @Override
     public void start(Stage primaryStage) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("Puzzle_Game.fxml")); // Load FXML
-        Scene scene = new Scene(root);
-        primaryStage.setScene(scene);
-        primaryStage.show();
+        Scene scene = new Scene(root); //creates the scene
+        primaryStage.setScene(scene); //sets the stage
+        primaryStage.show(); //displays the stage
     }
 }

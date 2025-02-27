@@ -46,15 +46,7 @@ public class PuzzleGridController {
         // Empty constructor - JavaFX will call @FXML initialize()
     }
 
-    private void loadClues() {
-        // Implement the logic to load clues here
-        // For example, you can set the text of the clues_text TextArea
-        clues_text.setText(clueLoader.get_List_Of_Clues().toString());
-    }
 
-    private void loadHints() {
-        hints_text.setText(hintLoader.getHints().toString());
-    }
 
     @FXML
     private void initialize() {
@@ -66,9 +58,8 @@ public class PuzzleGridController {
         categoryLoader.loadCategories("PuzzleCategories.csv");
         dataLoader.loadCSV("PuzzleSolutions.csv");
         clueLoader.loadClues("PuzzleClues.csv");
+
         loadClues();
-        hintLoader.loadHints("PuzzleHints.csv");
-        loadHints();
         buttons.addAll(Arrays.asList( button_1,button_2,button_3,button_4,button_5,button_6,button_7,button_8,
         button_9,button_10,button_11,button_12,button_13,button_14,button_15,button_16,
         button_17,button_18,button_19,button_20,button_21,button_22,button_23,button_24,
@@ -79,6 +70,8 @@ public class PuzzleGridController {
         for (Button button : buttons) {
             button.setOnAction(event -> toggleCell(button, null, null));
         }
+
+        hints.setOnAction(event -> displayHint());
 
 
 
@@ -146,6 +139,15 @@ public class PuzzleGridController {
         }
 
         moveHistory.add(button);
+    }
+
+    private void loadClues() {
+        clues_text.setText(String.join("\n", clueLoader.get_List_Of_Clues()));
+    }
+
+    @FXML
+    private void displayHint() {
+        hints_text.appendText(hintLoader.getNextHint() + "\n");
     }
 
     public void clearErrors() {
