@@ -1,5 +1,5 @@
 People,Countries,Wealth,Countries
-Al Costa,Argentina,$25 million,Argentina
-Hal Hickman,France,$26 million,France
-Leonard Levy,Norway,$27 million,Norway
-Sid Scott,Sweden,$28 million,Sweden
+Al Costa,Hal Hickman,Leonard Levy,Sid Scott
+Argentina,France,Norway,Sweden
+$25 million,$26 million,$27 million,$28 million
+Argentina,France,Norway,Sweden
