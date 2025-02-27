@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="715.0" style="-fx-background-color: #ede9da;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="715.0" style="-fx-background-color: #ede9da;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PuzzleGridController">
    <children>
       <Label text="Created by: Valerie, David, and Anthony" />
       <ImageView blendMode="MULTIPLY" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" translateX="450.0" translateY="-10.0">
