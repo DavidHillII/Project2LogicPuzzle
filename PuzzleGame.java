@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 
 public class PuzzleGame extends Application {
     public static void main(String[] args) {
-        launch(args); //Launches he gui
+        launch(args); //Launches he guid
     }
 
     @Override
