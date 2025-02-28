@@ -7,7 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class PuzzleGame extends Application {
-    public static void main(String[] args) {
+    public static void main(String[] args) { // Main class for the Logic Puzzle Game
         launch(args); //Launches he gui
     }
 
